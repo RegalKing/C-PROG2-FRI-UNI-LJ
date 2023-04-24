@@ -10,17 +10,12 @@ This course is known as the hardest course out of the ten courses in the first y
 <!-- GETTING STARTED -->
 ## Programming 2 - Progress tracker
 
- ```sh
- The Introductory Lecture
- ```
-- [ ] Given an array and number N, try to build N from a sum of array elements
-- [ ] Labyrinth built out of characters solver
-
 ```sh
 Control Constructs I - Week 1 
 ```
-- [x] Convert normal (10) number to Binary (2) with recursion
-- [x] Figure out if a word is a Palindrome
+- [x] Sum modulo: Write a program that reads numbers a and b and outputs their sum modulo 10
+- [x] All equal: Write a program that reads a number n and n more numbers, and then outputs 1 if all of the n numbers are equal to each other, and 0 if this is not the case.
+- [x] Second largest: Write a program that reads a number n and n more numbers, and then outputs the second largest among those n numbers. If there are multiple numbers that are the largest, the second largest number is equal to the largest number.
 
  ```sh
  Control Constructs II - Week 2 
