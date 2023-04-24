@@ -20,9 +20,8 @@ Control Constructs I - Week 1
  ```sh
  Control Constructs II - Week 2 
  ```
-- [ ] Given an array and number N, try to build N from a sum of array elements
-- [ ] Labyrinth built out of characters solver
-
+- [x] Pythagorean Threes
+- [x] Optimal Guessing
  ```sh
  Functions - Week 3
  ```
