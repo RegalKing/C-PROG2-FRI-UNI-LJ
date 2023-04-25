@@ -25,9 +25,8 @@ Control Constructs I - Week 1
  ```sh
  Functions - Week 3
  ```
-- [ ] Given an array and number N, try to build N from a sum of array elements
-- [ ] Labyrinth built out of characters solver
-
+- [x] Friend Numbers
+- [x] Lychrel Numbers Manipulation
  ```sh
  Arrays - Week 4
  ```
