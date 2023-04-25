@@ -30,8 +30,8 @@ Control Constructs I - Week 1
  ```sh
  Arrays - Week 4
  ```
-- [ ] Given an array and number N, try to build N from a sum of array elements
-- [ ] Labyrinth built out of characters solver
+- [x] Permutation variants of an array
+- [x] Biggest sum of sub-array in an array
 
  ```sh
  Arrays, Pointers, Sequences I - Week 5
