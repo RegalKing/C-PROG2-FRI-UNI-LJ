@@ -99,6 +99,11 @@ Control Constructs I - Week 1
 - [x] Arrays, Pointers, Sequences II - Week 6
 - [ ] Recursion I - Week 7
 - [ ] Recursion II - Week 8
+<!-- The C Language - Progress roadmap -->
+## Past Years Exams & Midterms
+
+- [x] 2018 - 1st Midterm A - 2nd task 
+- [x] 2018 - 1st Midterm B - 2nd task
 #
 - [x] First Midterm Exam Passed
 #
