@@ -106,7 +106,10 @@ Control Constructs I - Week 1
 - [x] 2018 - 1st Midterm B - 2nd task
 #
 ## My Midterms
-- [x] First Midterm Exam Passed
+- [x] First Midterm Exam Passed (45.6% out of 30% requirement)
+- [ ] Second Midterm Exam Passed (x% out of 54.4% requirement)
+- [ ] Subject Passed
+
 #
 - [ ] Recursion III - Week 9
 - [ ] Structures - Week 10
