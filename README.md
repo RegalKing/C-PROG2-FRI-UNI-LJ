@@ -105,6 +105,7 @@ Control Constructs I - Week 1
 - [x] 2018 - 1st Midterm A - 2nd task 
 - [x] 2018 - 1st Midterm B - 2nd task
 #
+## My Midterms
 - [x] First Midterm Exam Passed
 #
 - [ ] Recursion III - Week 9
