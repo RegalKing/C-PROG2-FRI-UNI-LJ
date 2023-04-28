@@ -36,8 +36,9 @@ Control Constructs I - Week 1
  ```sh
  Arrays, Pointers, Sequences I - Week 5
  ```
-- [ ] Given an array and number N, try to build N from a sum of array elements
-- [ ] Labyrinth built out of characters solver
+- [x] Function Sum
+- [x] Function IndexAndPointer
+- [x] Function FrequencyOfLetters
 
  ```sh
  Arrays, Pointers, Sequences II - Week 6
@@ -90,22 +91,25 @@ Control Constructs I - Week 1
 <!-- The C Language - Progress roadmap -->
 ## Roadmap
 
-- [ ] Introductory Lecture - Week 0
-- [ ] Control Constructs I - Week 1 
-- [ ] Control Constructs II - Week 2 
-- [ ] Functions - Week 3
-- [ ] Arrays - Week 4
-- [ ] Arrays, Pointers, Sequences I - Week 5
-- [ ] Arrays, Pointers, Sequences II - Week 6
+- [x] Control Constructs I - Week 1 
+- [x] Control Constructs II - Week 2 
+- [x] Functions - Week 3
+- [x] Arrays - Week 4
+- [x] Arrays, Pointers, Sequences I - Week 5
+- [x] Arrays, Pointers, Sequences II - Week 6
 - [ ] Recursion I - Week 7
 - [ ] Recursion II - Week 8
+#
+- [x] First Midterm Exam Passed
+#
 - [ ] Recursion III - Week 9
 - [ ] Structures - Week 10
 - [ ] Linked Lists - Week 11
 - [ ] Text Files - Week 12
 - [ ] Binary Files - Week 13
-
+#
+- [ ] Second Midterm Exam Passed
+#
 ## Goal
 - [ ] Pass the exam
-- Passing grade: (6-10): x
 
