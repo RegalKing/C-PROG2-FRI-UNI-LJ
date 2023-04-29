@@ -43,8 +43,9 @@ Control Constructs I - Week 1
  ```sh
  Arrays, Pointers, Sequences II - Week 6
  ```
-- [ ] Given an array and number N, try to build N from a sum of array elements
-- [ ] Labyrinth built out of characters solver
+- [x] Function NumberOfCharacters
+- [x] Function CopyStringUntilCharacter
+- [x] Function StringSegmentation
 
  ```sh
  Recursion I - Week 7
