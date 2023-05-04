@@ -100,26 +100,20 @@ Control Constructs I - Week 1
 - [x] Arrays, Pointers, Sequences II - Week 6
 - [ ] Recursion I - Week 7
 - [ ] Recursion II - Week 8
-<!-- The C Language - Progress roadmap -->
-## Past Years Exams & Midterms
-
-- [x] 2018 - 1st Midterm A - 2nd task 
-- [x] 2018 - 1st Midterm B - 2nd task
-#
-## My Midterms
-- [x] First Midterm Exam Passed (45.6% out of 30% requirement)
-- [ ] Second Midterm Exam Passed (x% out of 54.4% requirement)
-- [ ] Subject Passed
-
-#
 - [ ] Recursion III - Week 9
 - [ ] Structures - Week 10
 - [ ] Linked Lists - Week 11
 - [ ] Text Files - Week 12
 - [ ] Binary Files - Week 13
-#
-- [ ] Second Midterm Exam Passed
-#
+<!-- The C Language - Progress roadmap -->
+## Past Years Exams & Midterms
+
+- [x] 2018 - 1st Midterm A - 2nd task 
+- [x] 2018 - 1st Midterm B - 2nd task
+## My Midterms
+- [x] First Midterm Exam Passed (45.6% out of 30% requirement)
+- [ ] Second Midterm Exam Passed (x% out of 54.4% requirement)
+- [ ] Subject Passed
 ## Goal
 - [ ] Pass the exam
 
