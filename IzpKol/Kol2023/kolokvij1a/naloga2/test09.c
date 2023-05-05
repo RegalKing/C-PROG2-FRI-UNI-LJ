@@ -1,0 +1,112 @@
+
+#include <stdio.h>
+#include <stdlib.h>
+#include "naloga2.h"
+
+char* NIZI[] = {
+    "xmA43vAbm",
+    "5ib6RsFyEK",
+    "nXXzj",
+    "ObPCE7sy2",
+    "2",
+    "3R",
+    "Np",
+    "UR3KSm",
+    "o",
+    "0FH",
+    "GAiGJns7",
+    "egYpbHljox",
+    "UEc",
+    "Z3EE",
+    "HUVF",
+    "gZtElNUCM",
+    "s92",
+    "RoazT",
+    "94nR",
+    "901D",
+    "M",
+    "0",
+    "914CSS7pm",
+    "YZYBE",
+    "1IQIgA",
+    "gBtw",
+    "W",
+    "BAg1jIL",
+    "9",
+    "JyTg_hbfp",
+    "N_AOzay8",
+    "ZQ4",
+    "OqPG4yo",
+    "Cd",
+    "p",
+    "7rZmp",
+    "h",
+    "prUAnC9qHo",
+    "k",
+    "mkhI",
+    "L3SjldhKR",
+    "g",
+    "bF2hX",
+    "r2W1_Ez27",
+    "vBgh6ze3O",
+    "kh",
+    "ujzFw5fP",
+    "DqIfc",
+    "v",
+    "rzL7FyA",
+    "s",
+    "9V",
+    "imd",
+    "wwqYj",
+    "VL",
+    "RWrZ",
+    "AfC6ZRBCBJ",
+    "7rG",
+    "ZQHAE8MtOm",
+    "B_fka76bL",
+    "E3rdr6mHc",
+    "hrUeB",
+    "KhX8vz",
+    "lRTZ",
+    "ODH",
+    "At",
+    "6jGm6Hm",
+    "a9",
+    "YvV",
+    "aK9r9tf",
+    "qy_R47",
+    "M9vv8M",
+    "PARDZewux",
+    "X",
+    "a3EVZ",
+    "fwt_LAITKe",
+    "L",
+    "KMUM",
+    "JAdkg30",
+    "KP_CLx",
+    "0OmNZaSR",
+    "wpm5wt",
+    "Q0Loq",
+    "gX",
+    "7L_9eoO_",
+    "F8q8MbvyEp",
+    "mypmpag0",
+    "fl",
+    "6joYfu",
+    "QYQqN",
+    "xLsBP98GOn",
+};
+
+int main() {
+    int stIzhodnih = 0;
+    char** izhodni = poStolpcih(NIZI, sizeof(NIZI) / sizeof(NIZI[0]), &stIzhodnih);
+    printf("%d\n", stIzhodnih);
+
+    for (int i = 0; i < stIzhodnih; i++) {
+        printf("%d: \"%s\"\n", i, izhodni[i]);
+        free(izhodni[i]);
+    }
+    free(izhodni);
+
+    return 0;
+}

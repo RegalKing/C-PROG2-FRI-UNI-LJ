@@ -1,0 +1,105 @@
+
+#include <stdio.h>
+#include <stdlib.h>
+#include "naloga2.h"
+
+char* NIZI[] = {
+    "SYgRVlMmKLa",
+    "knqLdWdOLpf",
+    "z8BqYBdYtYO",
+    "gg36rSQWpg2",
+    "vfC0wHYkXY7",
+    "hyYBSSy0u1p",
+    "6X8M1AsTec_",
+    "rP4m5m4Ugtv",
+    "RbojPyHb2JO",
+    "3pp6kQyhq63",
+    "DOdCEjxNztt",
+    "_T5S4xwR7lI",
+    "DI945ZxFze4",
+    "wWQJsuo3dLn",
+    "0UNmrYmp2jX",
+    "JWRUfHcQePb",
+    "k5qQv6sEIZt",
+    "0XIsN1ndcxV",
+    "MqtAAURWgSm",
+    "HODPXBxvWgN",
+    "eiyVh9dJybq",
+    "WwCthZ_9y4Q",
+    "4hjJ1IXYh7o",
+    "LttPc14s6Uu",
+    "ZlNnGqZRGsD",
+    "W4nle6tWXdc",
+    "fNSiOFRpmlL",
+    "63Y9SiAIQ9F",
+    "9AV4xZbmUGj",
+    "ei_BH9djfIB",
+    "ZCKOiykSHRM",
+    "L3E9lUy1wAy",
+    "Ki7JOn67Qhf",
+    "IsQwKvx1xM7",
+    "yUKUI52yxbo",
+    "TbIllq2sXCz",
+    "ssHm8z5uVY9",
+    "ZrJrSbMHloj",
+    "SCF8NwD2iMN",
+    "GtaS0DLiGhR",
+    "9npc18fx539",
+    "aC601OFKtLk",
+    "7enT4CmSU_V",
+    "ms_vhp9i8gt",
+    "rqXjQ20sm56",
+    "P1mEj8_GZ_Y",
+    "QfVUjaBFXgk",
+    "PKkE4cxbO__",
+    "I2xTckM4hYC",
+    "NrzTpgnUVYg",
+    "c4iG6gFfxAP",
+    "fWkqCH1I749",
+    "k4DffzgeN3F",
+    "FkeCMlICipN",
+    "jPcerz3n75C",
+    "IXK5XE5BfU8",
+    "zAyEPeLydNL",
+    "QRQW0FNwgbb",
+    "VZ7pf6d2VeU",
+    "vd81riIuiRF",
+    "Ufuxrb2bcCb",
+    "2iHBOvz1Lhf",
+    "7iaLctphqng",
+    "Nud2r0Lhn0u",
+    "4SdyF08Z6PQ",
+    "S_oZ75PlbS7",
+    "yEkYNjMIVZe",
+    "L3WppB9frWO",
+    "N1eEqEA6yFm",
+    "wC6H8SeeDPg",
+    "urRu7BbGZxW",
+    "kSAX8geeZYm",
+    "X6kfaBPDdkQ",
+    "sEU6v6ERulr",
+    "2I87qGPZDjB",
+    "BbPyGwtP7eO",
+    "zpvrpnmMO1u",
+    "VURGOkK0oOE",
+    "MmpN2yHbTT6",
+    "5YAUAhIKOpT",
+    "TKHWI1PEhg9",
+    "vBTnmBFtl0_",
+    "VjvO1OuUD9r",
+    "4LyHW5fxTys",
+    "i0bMzILqSDL",
+};
+
+int main() {
+    int stIzhodnih = 0;
+    char** izhodni = poStolpcih(NIZI, sizeof(NIZI) / sizeof(NIZI[0]), &stIzhodnih);
+    printf("%d\n", stIzhodnih);
+
+    for (int i = 0; i < stIzhodnih; i++) {
+        printf("%d: \"%s\"\n", i, izhodni[i]);
+        free(izhodni[i]);
+    }
+    free(izhodni);
+    return 0;
+}
