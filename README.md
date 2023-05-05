@@ -107,9 +107,18 @@ Control Constructs I - Week 1
 - [ ] Binary Files - Week 13
 <!-- The C Language - Progress roadmap -->
 ## Past Years Exams & Midterms
-
+ ```sh
+ 2018
+ ```
 - [x] 2018 - 1st Midterm A - 2nd task 
 - [x] 2018 - 1st Midterm B - 2nd task
+ ```sh
+ 2023
+ ```
+- [x] 2023 - 1st Midterm A - 1st task 
+- [x] 2023 - 1st Midterm A - 2nd task 
+- [ ] 2023 - 1st Midterm A - 3rd task 
+
 ## My Midterms
 - [x] First Midterm Exam Passed (45.6% out of 30% requirement)
 - [ ] Second Midterm Exam Passed (x% out of 50% requirement)
