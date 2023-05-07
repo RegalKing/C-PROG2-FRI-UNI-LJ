@@ -50,8 +50,8 @@ Control Constructs I - Week 1
  ```sh
  Recursion I - Week 7
  ```
-- [ ] Given an array and number N, try to build N from a sum of array elements
-- [ ] Labyrinth built out of characters solver
+- [x] Number of Possible Recursive Combinations
+- [x] List of Possible Recursive Combinations
 - [Hanoi Towers - Explanation Video](https://www.youtube.com/watch?v=YstLjLCGmgg)
 - [Steps to solve any recursive problem [21min]](https://www.youtube.com/watch?v=ngCos392W4w)
 - [Recursion Explanation #1 [5min]](https://www.youtube.com/watch?v=ivl5-snqul8)
