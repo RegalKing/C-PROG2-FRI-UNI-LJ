@@ -34,6 +34,8 @@ int stMoznosti(int n, int k){
     if (n<0 || k==0){ // n<0 razlaga -> ce je n negativno stevilo, potem ni moznih zapisov vsote stevila N z stevili z intervala [1,N], ker bi bila resitev v vsakem primeru pozitivno stevilo, zato
                       // ne bi bila nikoli enaka N
 
+                      // namest n<0, lahko rajsi gledas ce je n<k -> stM(n,k)=stM(n,n) [razlaga: n bi se klical po stM(n,k-1) splosnem pogoju dokler ne bi prisel do stM(n,n) ]
+
                       // k==0 razlaga -> ce je k nic, potem po navodilu "na koliko načinov lahko število N zapišemo kot vsoto števil med 1 in vključno K", je interval med 1 in K [1,0]
                       // in posledicno ni resitev, ker je 1>0, 1 se ne da zapisati kot kakrsnokoli vsoto nicel
         return 0;
