@@ -5,27 +5,41 @@
 #include <stdbool.h>
 #include <limits.h>
 
-extern int list(int n, int k);
+extern void list(int* array, int size, int n, int k);
+extern void listArrayNumbers(int* array, int sizeOfArray);
 
 int main (){
 
     int n,k;
     scanf("%d%d",&n,&k);
 
-    printf("%d\n",list(n,k));
+    int* array=malloc(n*sizeof(int));// array za shranit vsote
+    list(array,0,n,k);
 
-
+    return 0;
 }
 
-int list(int n, int k){
+void listArrayNumbers(int* array, int sizeOfArray){
+    
+    for (int i=0;i<sizeOfArray;i++){
+        if (i != sizeOfArray-1){ // ce je zadnji element arraya potem ne smemo plusa izpisat
+            printf("%d + ",array[i]);
+        }
+        else{
+            printf("%d\n",array[i]);
+        }
+    }
+}
 
+void list(int* array, int size, int n, int k){
     if (n==0){
-        return 1;
+        listArrayNumbers(array, size);
+        return;
     }
-    if (n<0 || k==0){
-        return 0;
+    if (n<0||k==0){
+        return;
     }
-        return(list(n-k,k)+list(n,k-1));
-
-
+    array[size]=k;
+    list(array, size+1, n-k, k);
+    list(array,size,n,k-1);
 }
