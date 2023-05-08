@@ -62,8 +62,8 @@ Control Constructs I - Week 1
  ```sh
  Recursion II - Week 8
  ```
-- [ ] Given an array and number N, try to build N from a sum of array elements
-- [ ] Labyrinth built out of characters solver
+- [ ] Maximum price of N items of C price in V space
+- [ ] wadafak is this
 
  ```sh
  Recursion III - Week 9
