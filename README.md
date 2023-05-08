@@ -54,16 +54,18 @@ Control Constructs I - Week 1
 - [[Additional video explanation of solution at 11:09]](https://www.youtube.com/watch?v=ngCos392W4w)
 - [x] List of Possible Recursive Combinations [Logic is explained in the comments of the task above]
 - [Hanoi Towers - Explanation Video](https://www.youtube.com/watch?v=YstLjLCGmgg)
-- [Steps to solve any recursive problem [21min]](https://www.youtube.com/watch?v=ngCos392W4w)
-- [Recursion Explanation #1 [5min]](https://www.youtube.com/watch?v=ivl5-snqul8)
-- [Recursion Explanation #2 [Full Course] [2hr]](https://www.youtube.com/watch?v=IJDJ0kBx2LM)
+- [Steps to solve any recursive problem [21 min]](https://www.youtube.com/watch?v=ngCos392W4w)
+- [Recursion Explanation #1 [5 min]](https://www.youtube.com/watch?v=ivl5-snqul8)
+- [Recursion Explanation #2 [Full Course] [2 hr]](https://www.youtube.com/watch?v=IJDJ0kBx2LM)
 - [Recursion Explanation #3 [C] [10 videos]](https://www.youtube.com/watch?v=kepBmgvWNDw&list=PLBlnK6fEyqRjTO_UNGKuaaoxEqvSF0t5h)
 
 
  ```sh
  Recursion II - Week 8
  ```
-- [ ] Maximum price of N items of C price in V space
+- [ ] Maximum price of N unique items of C price in V space (Knapsack problem)
+- [Knapsack using Recursion - Explanation Video [19 min]](https://www.youtube.com/watch?v=mGfK-j9gAQA&t=0s)
+- [Knapsack using Two Methods - Explanation Video [Abdul Bari] [29 min]](https://www.youtube.com/watch?v=nLmhmB6NzcM)
 - [ ] wadafak is this
 
  ```sh
