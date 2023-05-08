@@ -5,5 +5,6 @@
         "limits.h": "c",
         "stdbool.h": "c",
         "stdlib.h": "c"
-    }
+    },
+    "C_Cpp.errorSquiggles": "disabled"
 }
