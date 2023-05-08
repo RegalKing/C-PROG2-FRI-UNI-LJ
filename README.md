@@ -63,10 +63,10 @@ Control Constructs I - Week 1
  ```sh
  Recursion II - Week 8
  ```
-- [ ] Maximum price of N unique items of C price in V space (Knapsack problem)
+- [x] Maximum price of N unique items of C price in V space (Knapsack problem)
 - [Knapsack using Recursion - Explanation Video [19 min]](https://www.youtube.com/watch?v=mGfK-j9gAQA&t=0s)
 - [Knapsack using Two Methods - Explanation Video [Abdul Bari] [29 min]](https://www.youtube.com/watch?v=nLmhmB6NzcM)
-- [ ] wadafak is this
+- [x] Knapsack with max K items with odd volume
 
  ```sh
  Recursion III - Week 9
