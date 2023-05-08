@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -19,9 +20,22 @@ int main (){
 }
 
 void listArrayNumbers(int* array, int sizeOfArray){
-    
+
+        //     for (int i=0;i<sizeOfArray;i++){               // odkomentiraj ce zelis videti podrobno delovanje
+        //     if (i==0){
+        //     printf("2:[%d,",array[i]);
+        //     }
+        //     if (i==sizeOfArray-1){
+        //         printf("%d]\n",array[i]);
+        //     }
+        //     else
+        //     {
+        //         printf("%d,",array[i]);
+        //     }
+        // }
+
     for (int i=0;i<sizeOfArray;i++){
-        if (i != sizeOfArray-1){ // ce je zadnji element arraya potem ne smemo plusa izpisat
+        if (i != sizeOfArray-1){ // ce je zadnji element arraya potem ne smemo plusa izpisat, zato minus ena
             printf("%d + ",array[i]);
         }
         else{
@@ -33,12 +47,43 @@ void listArrayNumbers(int* array, int sizeOfArray){
 void list(int* array, int size, int n, int k){
     if (n==0){
         listArrayNumbers(array, size);
+
+                                    
+        // for (int i=0;i<size;i++){           // odkomentiraj ce zelis videti podrobno delovanje
+        //     if (i==0){
+        //     printf("1:[%d,",array[i]);
+        //     }
+        //     if (i==size-1){
+        //         printf("%d]\n",array[i]);
+        //     }
+        //     else
+        //     {
+        //         printf("%d,",array[i]);
+        //     }
+        // }
+        
+
         return;
     }
     if (n<0||k==0){
         return;
     }
     array[size]=k;
+
+        //     for (int i=0;i<size;i++){           // odkomentiraj ce zelis videti podrobno delovanje
+        //     if (i==0){
+        //     printf("3:[%d,",array[i]);
+        //     }
+        //     if (i==size-1){
+        //         printf("%d]\n",array[i]);
+        //     }
+        //     else
+        //     {
+        //         printf("%d,",array[i]);
+        //     }
+        // }
+        
+
     list(array, size+1, n-k, k);
     list(array,size,n,k-1);
 }
