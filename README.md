@@ -104,9 +104,9 @@ Control Constructs I - Week 1
 - [x] Arrays - Week 4
 - [x] Arrays, Pointers, Sequences I - Week 5
 - [x] Arrays, Pointers, Sequences II - Week 6
-- [ ] Recursion I - Week 7
-- [ ] Recursion II - Week 8
-- [ ] Recursion III - Week 9
+- [x] Recursion I - Week 7
+- [x] Recursion II - Week 8
+- [x] Recursion III - Week 9
 - [ ] Structures - Week 10
 - [ ] Linked Lists - Week 11
 - [ ] Text Files - Week 12
