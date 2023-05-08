@@ -50,7 +50,8 @@ Control Constructs I - Week 1
  ```sh
  Recursion I - Week 7
  ```
-- [x] Number of Possible Recursive Combinations [With explanation in comments of the code]
+- [x] Number of Possible Recursive Combinations [With explanation in comments of the code] 
+- [[Additional video explanation of solution at 11:09]](https://www.youtube.com/watch?v=ngCos392W4w)
 - [x] List of Possible Recursive Combinations [Logic is explained in the comments of the task above]
 - [Hanoi Towers - Explanation Video](https://www.youtube.com/watch?v=YstLjLCGmgg)
 - [Steps to solve any recursive problem [21min]](https://www.youtube.com/watch?v=ngCos392W4w)
