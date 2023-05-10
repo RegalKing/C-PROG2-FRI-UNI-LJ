@@ -71,8 +71,8 @@ Control Constructs I - Week 1
  ```sh
  Recursion III - Week 9
  ```
-- [ ] Given an array and number N, try to build N from a sum of array elements
-- [ ] Labyrinth built out of characters solver
+- [x] All Possible Lexicographical Strings of [1,N] length between two characters
+- [x] Partitions of a set
 
  ```sh
  Structures - Week 10
