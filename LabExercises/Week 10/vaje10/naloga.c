@@ -6,18 +6,34 @@
 #include "naloga.h"
 
 int poisciStudenta(Student** studentje, int stStudentov, int vpisna) {
-    // popravite / dopolnite ...
-    return 42;
+    
+    for (int i=0; i<stStudentov; i++){
+        if (studentje[i]->vpisna == vpisna){
+            return i;
+        }
+    }
+    return -1;
+
 }
 
 int poisciPO(Student* student, char* predmet) {
-    // popravite / dopolnite ...
-    return 42;
+
+     for (int i=0; i<student->stPO; i++){
+        if (!(strcmp((student->po[i].predmet),predmet))){
+            return i;
+        }
+     }
+    return -1;
 }
 
+
+        
+
 int dodaj(Student** studentje, int stStudentov, int vpisna, char* predmet, int ocena) {
-    // popravite / dopolnite ...
-    return 42;
+    
+    for (int i=0; i<stStudentov; i++){
+        
+
 }
 
 #ifndef test
