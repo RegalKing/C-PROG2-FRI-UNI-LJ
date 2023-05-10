@@ -77,8 +77,9 @@ Control Constructs I - Week 1
  ```sh
  Structures - Week 10
  ```
-- [ ] Given an array and number N, try to build N from a sum of array elements
-- [ ] Labyrinth built out of characters solver
+- [x] Function findStudent 
+- [x] Function findIfStudentHasSubject
+- [x] Function Enrichen
 
  ```sh
  Linked Lists - Week 11
