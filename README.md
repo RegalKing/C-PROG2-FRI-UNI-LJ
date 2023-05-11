@@ -79,7 +79,7 @@ Control Constructs I - Week 1
  ```
 - [x] Function findStudent 
 - [x] Function findIfStudentHasSubject
-- [ ] Function Enrichen
+- [x] Function Enrichen
 
  ```sh
  Linked Lists - Week 11
