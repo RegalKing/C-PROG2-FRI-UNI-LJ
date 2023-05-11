@@ -111,7 +111,7 @@ Control Constructs I - Week 1
 - [x] Recursion I - Week 7
 - [x] Recursion II - Week 8
 - [x] Recursion III - Week 9
-- [ ] Structures - Week 10
+- [x] Structures - Week 10
 - [ ] Linked Lists - Week 11
 - [ ] Text Files - Week 12
 - [ ] Binary Files - Week 13
