@@ -84,14 +84,14 @@ Control Constructs I - Week 1
  ```sh
  Linked Lists - Week 11
  ```
-- [ ] Given an array and number N, try to build N from a sum of array elements
-- [ ] Labyrinth built out of characters solver
+- [ ] Iterative implementations of two functions
+- [ ] Recursive implementations of the same two functions
 
  ```sh
  Text Files - Week 12
  ```
-- [ ] Given an array and number N, try to build N from a sum of array elements
-- [ ] Labyrinth built out of characters solver
+- [ ] Copy longest line from a file to a new file containing only said line
+- [ ] Merge N number of files with an ascending list of numbers into one single file with all the numbers together in ascending order 
 
  ```sh
  Binary Files - Week 13
