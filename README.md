@@ -96,8 +96,8 @@ Control Constructs I - Week 1
  ```sh
  Binary Files - Week 13
  ```
-- [ ] Given an array and number N, try to build N from a sum of array elements
-- [ ] Labyrinth built out of characters solver
+- [ ] Color of a dot
+- [ ] Transformation into grays
 
 <!-- The C Language - Progress roadmap -->
 ## Roadmap
