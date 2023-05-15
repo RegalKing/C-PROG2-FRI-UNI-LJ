@@ -84,14 +84,16 @@ Control Constructs I - Week 1
  ```sh
  Linked Lists - Week 11
  ```
-- [ ] Iterative implementations of two functions
-- [ ] Recursive implementations of the same two functions
+- [x] Iterative implementation of function SumOfLinkedList function
+- [x] Recursive implementation of function SumOfLinkedList function
+- [x] Iterative implementation of InsertElementInAscendingSortedLinkedList function
+- [x] Recursive implementation of InsertElementInAscendingSortedLinkedList function
 
  ```sh
  Text Files - Week 12
  ```
-- [ ] Copy longest line from a file to a new file containing only said line
-- [ ] Merge N number of files with an ascending list of numbers into one single file with all the numbers together in ascending order 
+- [x] Copy longest line from a file to a new file containing only said line
+- [x] Merge N number of files with an ascending list of numbers into one single file with all the numbers together in ascending order 
 
  ```sh
  Binary Files - Week 13
@@ -112,8 +114,8 @@ Control Constructs I - Week 1
 - [x] Recursion II - Week 8
 - [x] Recursion III - Week 9
 - [x] Structures - Week 10
-- [ ] Linked Lists - Week 11
-- [ ] Text Files - Week 12
+- [x] Linked Lists - Week 11
+- [x] Text Files - Week 12
 - [ ] Binary Files - Week 13
 <!-- The C Language - Progress roadmap -->
 ## Past Years Exams & Midterms
