@@ -34,9 +34,12 @@ node* insert_z (int n, node* list){  // Insert an element to the end of the list
     }
 }
 
-
-        
-    
+void delete_all_rek (node* list){
+    if (list != NULL){
+        delete_all_rek(list->next);
+        free(list);
+    }
+}
 
 void print_itr (node* list){ // Print out a list  iteratively
 

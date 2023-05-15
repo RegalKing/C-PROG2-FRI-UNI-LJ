@@ -7,23 +7,72 @@
 #include "naloga.h"
 
 int vsotaI(Vozlisce* zacetek) {
-    // popravite / dopolnite ...
-    return -999;
+    
+    int sum = 0;
+    Vozlisce* temp = zacetek;
+    while (temp != NULL){
+        sum += temp->podatek;
+        temp=temp->naslednje;
+    }
+
+    return sum;
+
 }
 
 int vsotaR(Vozlisce* zacetek) {
-    // popravite / dopolnite ...
-    return -999;
+    
+    if (zacetek==NULL){
+        return 0;
+    }
+    else{
+        return zacetek->podatek + vsotaR(zacetek->naslednje);
+    }
 }
 
 Vozlisce* vstaviUrejenoI(Vozlisce* zacetek, int element) {
-    // popravite / dopolnite ...
-    return NULL;
+    
+    Vozlisce* current = zacetek;
+    Vozlisce* previous = NULL;
+
+    while (current != NULL && current->podatek < element){
+        previous = current;
+        current = current -> naslednje;
+    }
+
+    Vozlisce* new = malloc (sizeof(Vozlisce));
+    new->podatek=element;
+    new->naslednje=current;
+    
+    if (previous == NULL){
+        return new;
+    }
+    else{
+        previous->naslednje=new;
+        return zacetek;
+    }
 }
 
 Vozlisce* vstaviUrejenoR(Vozlisce* zacetek, int element) {
-    // popravite / dopolnite ...
-    return NULL;
+
+    if (zacetek==NULL){
+        Vozlisce* new = malloc (sizeof(Vozlisce));
+        new->podatek=element;
+        new->naslednje=NULL;
+        return new;
+    }
+
+    if (zacetek->podatek > element){
+        Vozlisce* new = malloc (sizeof(Vozlisce));
+        new->podatek=element;
+        new->naslednje=zacetek;
+        return new;
+    }
+    else{ 
+        zacetek->naslednje = vstaviUrejenoR(zacetek->naslednje, element);
+        return zacetek;
+    }
+
+
 }
 
 int main() {
