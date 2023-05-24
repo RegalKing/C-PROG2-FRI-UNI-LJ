@@ -124,6 +124,9 @@ Control Constructs I - Week 1
  ```
 - [x] 2018 - 1st Midterm A - 2nd task 
 - [x] 2018 - 1st Midterm B - 2nd task
+
+- [x] 2018 - 2nd Midterm A - 1st task 
+- [x] 2018 - 2nd Midterm B - 1st task
  ```sh
  2023
  ```
