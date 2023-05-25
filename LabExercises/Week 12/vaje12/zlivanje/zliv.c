@@ -74,9 +74,6 @@ int main (){
         finishedFiles++;
         }
     }
-    
-    
-    
 
 
 
