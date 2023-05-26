@@ -139,8 +139,8 @@ Control Constructs I - Week 1
 - [ ] 2023 - 1st Midterm A - 3rd task 
 
 ## My Midterms
-- [x] First Midterm Exam Passed (45.6% out of 30% requirement)
-- [ ] Second Midterm Exam Passed (x% out of 50% requirement)
+- [x] First Midterm Exam Passed (30% requirement)
+- [ ] Second Midterm Exam Passed (50% requirement)
 - [ ] Subject Passed (50% average across both midterms)
 ## Goal
 - [ ] Pass the subject
