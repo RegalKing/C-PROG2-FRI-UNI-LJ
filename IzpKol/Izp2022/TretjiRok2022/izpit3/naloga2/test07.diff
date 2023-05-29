@@ -1,0 +1,8 @@
+1c1
+< <h1>Danes je prav lep dan,</h1>
+---
+> Danes je prav lep dan,
+4c4
+< Seveda, to je se kako res!
+---
+> <h1>Seveda, to je se kako res!</h1>

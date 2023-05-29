@@ -11,8 +11,12 @@
 #include "naloga2.h"
 
 Vozlisce* vstaviUrejeno(Vozlisce* zacetek, int element) {
-    // popravite oz. dopolnite / modify and/or add ...
-    return NULL;
+    
+    if (zacetek==NULL){
+        return NULL;
+    }
+
+    else if (zacetek->n==NULL)
 }
 
 int main() {

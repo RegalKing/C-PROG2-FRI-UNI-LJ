@@ -18,13 +18,14 @@
 int steviloElementov(Vozlisce* p) {
     
     Vozlisce* temp = p;
-    int sum=0;
-    do {
-        temp=temp->naslednje;
-        sum++;
-    } while (p!=temp);
 
-    return sum;
+    int counter=0;
+    do{
+        temp=temp->naslednje;
+        counter++;
+    } while (temp!=p);
+
+    return counter;
 
 
 }

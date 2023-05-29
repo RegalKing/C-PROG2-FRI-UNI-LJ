@@ -18,14 +18,19 @@
 int razdalja(Vozlisce* p, Vozlisce* q) {
     
     Vozlisce* temp = p;
-    int sum = 0;
 
-    while (temp!=q){
-        sum++;
-        temp=temp->naslednje;
+    if (p==q){
+        return 0;
     }
 
-    return sum;
+    int counter = 0;
+    do {
+        temp=temp->naslednje;
+        counter++;
+    } while (temp!=q);
+
+    return counter;
+
 
 }
 
