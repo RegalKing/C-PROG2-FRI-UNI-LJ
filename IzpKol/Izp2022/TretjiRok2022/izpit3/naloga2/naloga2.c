@@ -36,27 +36,29 @@ test*.res: dejanski izhod testnega programa (pri poganjanju z make)
 
 //============================================================================
 
-void surround(char** zacetek){
-    int length = strlen(*zacetek);
-    char* temp = malloc((length+10)*sizeof(char));
-    strcpy(temp,"<h1>");
-    strcat(temp, *zacetek);
-    strcat(temp,"</h1>");
-    *zacetek=temp;
-}
+void obogati(char** niz){
+char* tempString = calloc(1001, sizeof(char));
 
+char* start = "<h1>";
+char* end = "</h1>";
+
+strcpy(tempString, *niz);
+
+    strcpy(*niz, start);
+    strcat(*niz, tempString);
+    strcat(*niz, end);
+}
 
 void vstaviH1(Vozlisce* zacetek) {
 
-    Vozlisce* current = zacetek;
-    Vozlisce* previous = NULL;
+    Vozlisce* start = zacetek;
+    Vozlisce* temp = zacetek;
 
-    while (current->naslednje != NULL){
-        if ( (previous==NULL || previous->niz==NULL) && (current->niz!=NULL) ){
-            surround(&(current->niz));
+    while (temp!=NULL){
+        if (temp->niz[0]!='\0'){
+            obogati( &(temp->niz) );
         }
-        previous=current;
-        current=current->naslednje;
+        temp=temp->naslednje;
     }
                 
 }

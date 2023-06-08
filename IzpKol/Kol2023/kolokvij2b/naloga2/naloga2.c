@@ -21,7 +21,28 @@
 // po potrebi dopolnite ...
 
 void izlociDuplikate(Vozlisce* zacetek) {
-    // dopolnite ...
+    
+    Vozlisce* start = zacetek;
+    Vozlisce* temp = zacetek;
+
+    int* numbers = malloc(1000 * sizeof(int));
+    int numbersCount = 0;
+
+    while (temp!=NULL){
+        numbers[numbersCount]=*(temp->p);
+        numbersCount++;
+        temp=temp->naslednje;
+    }
+
+    temp = start;
+    while (temp!=NULL){
+        int currentNumber = *(temp->p);
+        
+
+
+
+
+
 }
 
 //=============================================================================

@@ -4,18 +4,18 @@
 
 
 
-je
+<h1>je</h1>
 
 
 
-vsaka
+<h1>vsaka</h1>
 
-vrstica
-
-
+<h1>vrstica</h1>
 
 
-tudi
 
 
-naslovna!
+<h1>tudi</h1>
+
+
+<h1>naslovna!</h1>
