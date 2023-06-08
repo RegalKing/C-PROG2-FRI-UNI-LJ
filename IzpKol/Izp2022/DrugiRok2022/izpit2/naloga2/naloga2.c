@@ -33,39 +33,40 @@ test05..test10: splo"sni primeri
 
 //============================================================================
 
-int exists(Vozlisce* temp, Vozlisce** vozlisca){
+int indexExists(Vozlisce** seznam, Vozlisce* temp){
 
     int obstaja = -1;
-    int counter=0;
-    while (vozlisca[counter] != NULL){
-        if (vozlisca[counter]==temp){
-            return counter;
+
+    for (int i=0; seznam[i]!=NULL; i++){
+        if (seznam[i] == temp){
+            return i;
         }
-        counter++;
     }
     return obstaja;
 
+    
 }
+
 
 int dolzinaCikla(Vozlisce* zacetek) {
     
     Vozlisce* temp = zacetek;
-    Vozlisce** vozlisca = calloc(1001, sizeof(Vozlisce*));
+    Vozlisce** seznam = calloc (1001, sizeof(Vozlisce*));
 
     int st = 0;
-
-    while (temp != NULL){
-        if (exists(temp, vozlisca) == -1){
-            vozlisca[st]=temp;
-            temp=temp->naslednje;
+    while (temp!=NULL){
+        int stevilka = indexExists(seznam, temp);
+        if (stevilka == -1){
+            seznam[st]=temp;
             st++;
         }
         else{
-            int startIndex = exists(temp, vozlisca);
-            return st - startIndex;
+            return st-stevilka;
         }
+        temp=temp->naslednje;
     }
-    return st;
+    return 0;
+    
 }
 
 
