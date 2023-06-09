@@ -98,8 +98,8 @@ Control Constructs I - Week 1
  ```sh
  Binary Files - Week 13
  ```
-- [ ] Color of a dot
-- [ ] Transformation into grays
+- [x] Color of a dot
+- [x] Transformation into grays
 
 <!-- The C Language - Progress roadmap -->
 ## Roadmap
@@ -116,7 +116,7 @@ Control Constructs I - Week 1
 - [x] Structures - Week 10
 - [x] Linked Lists - Week 11
 - [x] Text Files - Week 12
-- [ ] Binary Files - Week 13
+- [x] Binary Files - Week 13
 <!-- The C Language - Progress roadmap -->
 ## Past Years Exams & Midterms
  ```sh
