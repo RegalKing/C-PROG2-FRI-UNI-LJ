@@ -135,7 +135,10 @@ Control Constructs I - Week 1
  ```sh
  2022
  ```
+- [x] 2022 - 2nd Exam - 1st task 
 - [x] 2022 - 2nd Exam - 2nd task 
+- [x] 2022 - 3rd Exam - 1st task 
+- [x] 2022 - 3rd Exam - 2nd task (50%)
 
  ```sh
  2023
