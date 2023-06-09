@@ -31,7 +31,21 @@ test07..test10: samodejno izdelani, splo"sni
 // Lahko dodate "se kak #include, pomo"zno funkcijo ipd.
 
 int main(int argc, char** argv) {
-    // dopolnite ...
+    
+    FILE* input = fopen (argv[1], "rb");
+    unsigned char byte;
+    int bitCount = 0;
+
+    while ( (fread(&byte, sizeof(byte), 1, input) == 1 ) ){
+
+        while (byte!=0){
+            bitCount+= byte & 1;
+            byte>>=1;
+        }
+    }
+
+    printf("%d", bitCount);
+
 
     return 0;
 }

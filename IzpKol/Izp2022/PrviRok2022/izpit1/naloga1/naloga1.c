@@ -37,6 +37,8 @@ test15..test17: samodejno izdelani, splo"sni
 
 int sestEj(char* niz) {
     
+    
+
 }
 
 //============================================================================
