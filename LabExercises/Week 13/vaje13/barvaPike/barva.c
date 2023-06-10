@@ -2,28 +2,32 @@
 #include <stdlib.h>
 
 
+
 int main (int argc, char** argv){
 
     FILE* input = fopen(argv[1], "rb");
-    int width = atoi(argv[2]);
-    int height= atoi(argv[3]);
+    
+    int vrstica = atoi(argv[2]);
+    int stolpec = atoi(argv[3]);
 
-    int tempNumber = 10;
-    char* temp = malloc (10 * sizeof(char));
+    char* string = malloc (10 * sizeof(char));
 
-    int ReadWidth, ReadHeight;
+    fgets(string, 10, input); // preberemo P6 \n
 
-    fgets(temp, tempNumber, input); // preberemo vrstico P6 (P6 = 2 char + \n = 1 char + '\0' = 1 char)
-    fscanf(input, "%d %d", &ReadWidth, &ReadHeight);
-    fgets(temp, tempNumber, input); // preberemo newline po 3 2 stevilkah
-    fgets(temp, tempNumber, input); // preberemo 255 vrstico (255 = 3 char + \n = 1 char + '\0' = 1 char)
+    // printf("%s",string);
 
-    unsigned char* bits = malloc (3*ReadWidth*ReadHeight*sizeof(unsigned char)); //preberemo podatke o pixlih (R G B dele posameznega pixla)
-    fread(bits, sizeof(unsigned char), 3*ReadWidth*ReadHeight, input);
-    fclose(input);
+    int width, height;
+    fscanf(input, "%d %d", &width, &height);
+    fgets(string, 10, input);
+    // printf("%s",string);
+    fgets(string, 10, input);
+    // printf("%s",string);
 
-    // najdemo barvne komponente pixlov na podanih koordinatah
-    int indeks = 3*(width*ReadHeight+height);
-    printf("%d %d %d\n", bits[indeks], bits[indeks+1], bits[indeks+2]);
+    unsigned char* binary = malloc(3*width*height*sizeof(unsigned char));
+
+    fread(binary, sizeof(unsigned char), 3*width*height, input);
+
+    int index = 3*(vrstica*width +  stolpec);
+    printf("%d %d %d", binary[index], binary[index+1], binary[index+2]);
 
 }
