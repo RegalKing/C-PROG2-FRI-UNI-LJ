@@ -151,6 +151,9 @@ Control Constructs I - Week 1
 - [x] 2023 - 2nd Midterm A - 1st task 
 - [x] 2023 - 2nd Midterm A - 2nd task 
 - [ ] 2023 - 1st Midterm A - 3rd task 
+- [x] 2023 - 2nd Midterm B - 1st task 
+- [x] 2023 - 2nd Midterm B - 2nd task 
+- [ ] 2023 - 1st Midterm B - 3rd task 
 - -------------------------------
 - [ ] 2023 - 1st Exam - 1st task 
 - [ ] 2023 - 1st Exam - 2nd task 
