@@ -20,25 +20,44 @@
 
 // po potrebi dopolnite ...
 
+int exists(Vozlisce** seznam, Vozlisce* node){
+
+    for (int i=0; seznam[i]!=NULL; i++){
+        if (*(node->p)==*(seznam[i]->p)){
+            return 1;
+        }
+    }
+    return 0; // else
+}
+
+
 void izlociDuplikate(Vozlisce* zacetek) {
-    
-    Vozlisce* start = zacetek;
+
+    // int* stevila = malloc (1000*sizeof(int));
+    Vozlisce** seznam = calloc (1001,sizeof(Vozlisce*));
+
     Vozlisce* temp = zacetek;
 
-    int* numbers = malloc(1000 * sizeof(int));
-    int numbersCount = 0;
+    int index = -1;
 
     while (temp!=NULL){
-        numbers[numbersCount]=*(temp->p);
-        numbersCount++;
+        int exist = exists(seznam, temp);
+        if (exist == 1){
+        }
+        else{
+            index++;
+            seznam[index]=temp;
+        }
         temp=temp->naslednje;
     }
 
-    temp = start;
-    while (temp!=NULL){
-        int currentNumber = *(temp->p);
-        
+    for (int i=0; seznam[i]!=NULL; i++){
+        Vozlisce* current = seznam[i];
 
+        current->naslednje=seznam[i+1];
+    }
+
+    zacetek=seznam[0];
 
 
 
@@ -50,9 +69,8 @@ void izlociDuplikate(Vozlisce* zacetek) {
 #ifndef test
 
 int main() {
-    // "Ce "zelite funkcijo izlociSkupne testirati brez testnih primerov,
-    // dopolnite to funkcijo in prevedite datoteko na obi"cajen na"cin
-    // (gcc naloga2.c).
+    
+
     return 0;
 }
 
