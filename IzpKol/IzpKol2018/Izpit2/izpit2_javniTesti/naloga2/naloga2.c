@@ -12,9 +12,12 @@
 
 Vozlisce* vstaviUrejeno(Vozlisce* zacetek, int element) {
     
-    
+        Vozlisce* temp = zacetek;
+        Vozlisce** nodes = malloc (1002*sizeof(Vozlisce*));
 
-    
+
+
+
 }
 
 int main() {
