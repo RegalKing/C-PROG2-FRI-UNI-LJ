@@ -15,11 +15,9 @@ int main(int argc, char** argv) {
 
     char* row = malloc (10001 * sizeof(char));
 
-// int eligible=0;
-
     while (fgets(row, 10001, input) != NULL){
         for (int i=0; row[i]!='\0'; i++){
-            if(row[i]==34){
+            if(row[i]==34){ // 34 je ASCII za "
                 if ((row[i+1]=='C' || row[i+1]=='c' || row[i+1]=='S' || row[i+1]=='s' || row[i+1]=='Z' || row[i+1]=='z')){
                     fprintf(output, "%c",row[i+1]);
                     i++;

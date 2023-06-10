@@ -12,11 +12,9 @@
 
 Vozlisce* vstaviUrejeno(Vozlisce* zacetek, int element) {
     
-    if (zacetek==NULL){
-        return NULL;
-    }
+    
 
-    else if (zacetek->n==NULL)
+    
 }
 
 int main() {
