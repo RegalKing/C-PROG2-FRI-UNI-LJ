@@ -136,6 +136,8 @@ Control Constructs I - Week 1
  2022
  ```
 - [x] 2022 - 1st Exam - 3rd task 
+- [x] 2022 - 1st Exam - 1st task [Online Exam version]
+- [x] 2022 - 1st Exam - 2nd task [Online Exam version]
 - [x] 2022 - 2nd Exam - 1st task 
 - [x] 2022 - 2nd Exam - 2nd task 
 - [x] 2022 - 3rd Exam - 1st task 
