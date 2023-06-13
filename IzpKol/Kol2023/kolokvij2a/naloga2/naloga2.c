@@ -41,8 +41,9 @@ void izlociSkupne(Vozlisce* a, Vozlisce* b, Vozlisce** noviA, Vozlisce** noviB) 
 
     while (temp!=NULL){
         numbersA[counterA]=temp->podatek;
-        temp=temp->naslednje;
         counterA++;
+        temp=temp->naslednje;
+        
     }
 
     temp = b;
@@ -50,8 +51,9 @@ void izlociSkupne(Vozlisce* a, Vozlisce* b, Vozlisce** noviA, Vozlisce** noviB) 
 
     while (temp!=NULL){
         numbersB[counterB]=temp->podatek;
-        temp=temp->naslednje;
         counterB++;
+        temp=temp->naslednje;
+        
     }
 
     numbersA[counterA]=INT_MIN;
