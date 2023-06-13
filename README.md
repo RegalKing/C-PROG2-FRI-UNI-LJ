@@ -135,6 +135,7 @@ Control Constructs I - Week 1
  ```sh
  2022
  ```
+- [x] 2022 - 1st Exam - 1st task 
 - [x] 2022 - 1st Exam - 3rd task 
 - -------------------------------
 - [x] 2022 - 1st Exam - 1st task [Online Exam version]
