@@ -28,6 +28,7 @@ test15..test17: samodejno izdelani, splo"sni
 #include <stdlib.h>
 #include <stdbool.h>
 #include <string.h>
+#include <ctype.h>
 
 #include "naloga1.h"
 
@@ -36,8 +37,50 @@ test15..test17: samodejno izdelani, splo"sni
 //============================================================================
 
 int sestEj(char* niz) {
+
+    char* stevilka = calloc(10,sizeof(char));
     
-    
+    int sum = 0;
+
+    for (int i=0; niz[i]!='\0'; i++){
+        if (niz[i]=='E'){
+            i++;
+            if (isdigit(niz[i]) && niz[i]!='0'){
+                stevilka[0]=niz[i];
+                i++;
+                if (isdigit(niz[i])){
+                    stevilka[1]=niz[i];
+                    i++;
+                    if (isdigit(niz[i])){
+                        stevilka[2]=niz[i];
+                        stevilka[3]='\0';
+                        i++;
+                        if (niz[i]=='_'){
+                            // printf("%d ", atoi(stevilka));
+                            sum+=atoi(stevilka);
+                            
+                        }
+                        else{
+                            i--;
+                        }
+                    }
+                    else{
+                        i--;
+                    }
+                }
+                else{
+                    i--;
+                }
+            }
+            else{
+                i--;
+            }
+        }
+    }
+    return sum;
+
+
+
 
 }
 
