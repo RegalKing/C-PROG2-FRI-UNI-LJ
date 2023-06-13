@@ -39,22 +39,19 @@ ref*.pgm: pri"cakovana izhodna slika
 
 int main(int argc, char** argv) {
     
-    FILE* input = fopen(argv[1],"rb");
-
-    int prag=atoi(argv[2]);
-
+    FILE* input = fopen(argv[1], "rb");
+    int prag = atoi(argv[2]);
     FILE* output = fopen(argv[3], "wb");
 
-    char* temp = malloc(10* sizeof(char));
+    char* temp = malloc (10* sizeof(char));
 
     fgets(temp, 10, input);
-
     int width, height;
-
-    fscanf(input, "%d %d %s",&width, &height, temp);
+    fscanf(input, "%d %d", &width, &height);
+    fgets(temp, 10, input);
     fgets(temp, 10, input);
 
-    unsigned char* binary = malloc(width*height*sizeof(unsigned char));
+    unsigned char* binary = malloc (width*height*sizeof(unsigned char));
 
     fread(binary, sizeof(unsigned char), width*height, input);
 

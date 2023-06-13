@@ -36,27 +36,30 @@ test*.res: dejanski izhod testnega programa (pri poganjanju z make)
 
 //============================================================================
 
-void obogati(char** niz){
-char* tempString = calloc(1001, sizeof(char));
+void obogati(char** beseda){
+    char* temp = calloc(1100,sizeof(char));
 
-char* start = "<h1>";
-char* end = "</h1>";
+    char* levo = "<h1>";
+    char* desno = "</h1>";
 
-strcpy(tempString, *niz);
+    strcpy(temp, *beseda);
 
-    strcpy(*niz, start);
-    strcat(*niz, tempString);
-    strcat(*niz, end);
+    strcpy(*beseda, levo);
+    strcat(*beseda, temp);
+    strcat(*beseda, desno);
+    
 }
+
+
+
 
 void vstaviH1(Vozlisce* zacetek) {
 
-    Vozlisce* start = zacetek;
     Vozlisce* temp = zacetek;
 
-    while (temp!=NULL){
+    while(temp!=NULL){
         if (temp->niz[0]!='\0'){
-            obogati( &(temp->niz) );
+            obogati(&(temp->niz));
         }
         temp=temp->naslednje;
     }

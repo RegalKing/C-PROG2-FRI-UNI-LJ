@@ -53,11 +53,14 @@ int sestEj(char* niz) {
                     i++;
                     if (isdigit(niz[i])){
                         stevilka[2]=niz[i];
-                        stevilka[3]='\0';
                         i++;
                         if (niz[i]=='_'){
                             // printf("%d ", atoi(stevilka));
                             sum+=atoi(stevilka);
+                            
+                        }
+                        else{
+                            i--;
                         }
                     }
                     else{

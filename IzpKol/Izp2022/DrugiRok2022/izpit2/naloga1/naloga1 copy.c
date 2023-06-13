@@ -32,20 +32,18 @@ test07..test10: samodejno izdelani, splo"sni
 
 int main(int argc, char** argv) {
     
-    FILE* input = fopen(argv[1], "rb");
+    FILE* input = fopen(argv[1],"rb");
 
     unsigned char byte;
 
-    int sum=0;
-    while (fread(&byte, sizeof(unsigned char), 1, input) == 1){
+    int sum = 0;
+    while ( fread(&byte, sizeof(unsigned char), 1, input) != 0){
         while (byte!=0){
-            sum+=byte&1;
-            byte>>=1;
+            sum+= byte&1;
+            byte=byte>>1;
         }
     }
-    printf("%d", sum);
-
-
+    printf("%d",sum);
 
 
 
