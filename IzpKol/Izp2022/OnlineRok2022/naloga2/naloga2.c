@@ -36,42 +36,39 @@ test11..test16: samodejno izdelani, splo"sni
 
 Vozlisce* zlij(Vozlisce* a, Vozlisce* b) { // lepa resitev za 16/16 testnih , grsa ki je passala 12.5/16 je bila da sem naredil seznam vozlisc ampak tale je lepsa pa hitrejsa
 
-    Vozlisce* tempA = a;
-    Vozlisce* tempB = b;
-    
-    Vozlisce novo;
-    Vozlisce* novoP = &novo;
+Vozlisce new;
+Vozlisce* newP = &new;
 
-    while (tempA!=NULL || tempB!=NULL){
-        if (tempA!= NULL && tempB!=NULL){
-            int currentA = tempA->podatek;
-            int currentB = tempB-> podatek;
-            if (currentA<currentB){
-                novoP->naslednje=tempA;
-                novoP=novoP->naslednje;
-                tempA=tempA->naslednje;
-            }
-            else{
-                novoP->naslednje=tempB;
-                novoP=novoP->naslednje;
-                tempB=tempB->naslednje;
-            }
+    while (a!=NULL || b!=NULL){
+        if (a==NULL){
+            newP->naslednje=b;
+            b=b->naslednje;
+            newP=newP->naslednje;
+            newP->naslednje=NULL;
         }
-        else if (tempA==NULL && tempB!=NULL){
-                novoP->naslednje=tempB;
-                novoP=novoP->naslednje;
-                tempB=tempB->naslednje;
+        else if (b==NULL){
+            newP->naslednje=a;
+            a=a->naslednje;
+            newP=newP->naslednje;
+            newP->naslednje=NULL;
         }
-        else if (tempA!=NULL && tempB==NULL){
-                novoP->naslednje=tempA;
-                novoP=novoP->naslednje;
-                tempA=tempA->naslednje;
+        else if (a->podatek < b->podatek){
+            newP->naslednje=a;
+            a=a->naslednje;
+            newP=newP->naslednje;
+            newP->naslednje=NULL;
+        }
+        else if (b->podatek < a->podatek){
+            newP->naslednje=b;
+            b=b->naslednje;
+            newP=newP->naslednje;
+            newP->naslednje=NULL;
         }
     }
+    newP=&new;
+    return newP->naslednje;
 
-    Vozlisce novo;
-    Vozlisce* novoP = &novo;
-    return novo.naslednje;
+
 
 
 }

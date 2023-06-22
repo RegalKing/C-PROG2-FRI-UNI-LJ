@@ -37,13 +37,20 @@ test06..test10: samodejno izdelani, splo"sni
 void vstaviPredpono(char* predpona, Oseba** osebe, int stOseb) {
     
     for (int i=0; i<stOseb; i++){
-        char* telefonska = osebe[i]->telefon;
-        char* novaTelefonska = malloc (31*sizeof(char));
-        strcpy(novaTelefonska,predpona);
-
-        strcat(novaTelefonska,telefonska);
-        strcpy(osebe[i]->telefon, novaTelefonska);
+        char* temp = malloc (33*sizeof(char));
+        strcpy(temp, osebe[i]->telefon);
+        strcpy(osebe[i]->telefon, predpona);
+        strcat(osebe[i]->telefon, temp);
     }
+
+
+
+
+
+
+
+
+
 }
 
 //============================================================================

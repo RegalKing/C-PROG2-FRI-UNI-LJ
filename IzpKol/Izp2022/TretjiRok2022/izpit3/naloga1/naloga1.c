@@ -43,15 +43,14 @@ int main(int argc, char** argv) {
     int prag = atoi(argv[2]);
     FILE* output = fopen(argv[3], "wb");
 
-    char* temp = malloc (10* sizeof(char));
+    char* temp = malloc(sizeof(char)*10);
 
     fgets(temp, 10, input);
     int width, height;
-    fscanf(input, "%d %d", &width, &height);
-    fgets(temp, 10, input);
+    fscanf(input, "%d %d %s", &width, &height, temp);
     fgets(temp, 10, input);
 
-    unsigned char* binary = malloc (width*height*sizeof(unsigned char));
+    unsigned char* binary = malloc(width*height*sizeof(unsigned char));
 
     fread(binary, sizeof(unsigned char), width*height, input);
 
@@ -64,11 +63,12 @@ int main(int argc, char** argv) {
         }
     }
 
-    fprintf(output,"P5\n");
-    fprintf(output,"%d %d\n",width,height);
-    fprintf(output,"255\n");
 
-
+    fprintf(output, "P5\n");
+    fprintf(output, "%d %d\n", width, height);
+    fprintf(output, "255\n");
     fwrite(binary, sizeof(unsigned char), width*height, output);
+
+
 
 }

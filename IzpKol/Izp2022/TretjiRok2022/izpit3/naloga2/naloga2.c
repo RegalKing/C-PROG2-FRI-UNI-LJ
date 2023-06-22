@@ -36,34 +36,57 @@ test*.res: dejanski izhod testnega programa (pri poganjanju z make)
 
 //============================================================================
 
-void obogati(char** beseda){
-    char* temp = calloc(1100,sizeof(char));
-
-    char* levo = "<h1>";
-    char* desno = "</h1>";
-
-    strcpy(temp, *beseda);
-
-    strcpy(*beseda, levo);
-    strcat(*beseda, temp);
-    strcat(*beseda, desno);
-    
-}
-
 
 
 
 void vstaviH1(Vozlisce* zacetek) {
 
-    Vozlisce* temp = zacetek;
+    Vozlisce* current = zacetek;
 
-    while(temp!=NULL){
-        if (temp->niz[0]!='\0'){
-            obogati(&(temp->niz));
+    Vozlisce* previous = NULL;
+
+    while (current!=NULL){
+        if (previous==NULL){ // prvi element linked lista
+            if (current->naslednje!=NULL){
+                if (current->niz[0]!='\0' && current->naslednje->niz[0]=='\0'){
+                    char* new = malloc (1100*sizeof(char));
+                    strcpy(new, current->niz);
+                    sprintf(current->niz, "<h1>%s</h1>", new);
+                }
+                previous=current;
+            }
+            else{
+                if (current->niz[0]!='\0'){
+                    char* new = malloc (1100*sizeof(char));
+                    strcpy(new, current->niz);
+                    sprintf(current->niz, "<h1>%s</h1>", new);
+                }
+                previous=current;
+            }
         }
-        temp=temp->naslednje;
+
+        if (current->naslednje!=NULL){ // ne-prvi in ne-zadnji element linked lista
+            if (previous->niz[0]=='\0' && current->niz[0]!='\0' && current->naslednje->niz[0]=='\0'){
+                char* new = malloc (1100*sizeof(char));
+                strcpy(new, current->niz);
+                sprintf(current->niz, "<h1>%s</h1>", new);
+            }
+            previous=current;
+        }
+        if (current->naslednje==NULL){ // zadnji element linked lista
+            if (previous->niz[0]=='\0' && current->niz[0]!='\0'){
+                char* new = malloc (1100*sizeof(char));
+                strcpy(new, current->niz);
+                sprintf(current->niz, "<h1>%s</h1>", new);
+            }
+            previous=current;
+        }
+
+
+        current=current->naslednje;
     }
-                
+
+
 }
 
 //============================================================================
