@@ -83,7 +83,7 @@ if (mesto==0){
 
 }
 
-else if (mesto!=stevec){
+else{
     Vozlisce* priorNew=NULL;
 
     int counter = vsebina;
@@ -119,35 +119,6 @@ else if (mesto!=stevec){
         last=last->dol;
     }
 }
-
-else{
-    Vozlisce* prior = NULL;
-    int counter = vsebina;
-
-    for (int i=0; first!=NULL; i++){
-        if (i==0){
-            Vozlisce* new = malloc(1*sizeof(Vozlisce));
-            new->vsebina=counter;
-            counter++;
-            new->desno=NULL;
-            first->desno=new;
-
-            prior = new;
-        }
-        else{
-            Vozlisce* new = malloc(1*sizeof(Vozlisce));
-            new->vsebina=counter;
-            counter++;
-            new->desno=NULL;
-            first->desno=new;
-            prior->dol=new;
-
-            prior = new;
-        }
-        first=first->dol;
-    }
-}
-
             
     return start;
 
