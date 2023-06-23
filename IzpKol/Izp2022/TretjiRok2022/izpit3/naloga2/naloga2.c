@@ -36,7 +36,11 @@ test*.res: dejanski izhod testnega programa (pri poganjanju z make)
 
 //============================================================================
 
-
+void enrichen (char** string){
+        char* new = malloc (1100*sizeof(char));
+        strcpy(new, *string);
+        sprintf(*string, "<h1>%s</h1>", new);
+}
 
 
 void vstaviH1(Vozlisce* zacetek) {
@@ -49,17 +53,13 @@ void vstaviH1(Vozlisce* zacetek) {
         if (previous==NULL){ // prvi element linked lista
             if (current->naslednje!=NULL){
                 if (current->niz[0]!='\0' && current->naslednje->niz[0]=='\0'){
-                    char* new = malloc (1100*sizeof(char));
-                    strcpy(new, current->niz);
-                    sprintf(current->niz, "<h1>%s</h1>", new);
+                    enrichen(&(current->niz));
                 }
                 previous=current;
             }
             else{
                 if (current->niz[0]!='\0'){
-                    char* new = malloc (1100*sizeof(char));
-                    strcpy(new, current->niz);
-                    sprintf(current->niz, "<h1>%s</h1>", new);
+                    enrichen(&(current->niz));
                 }
                 previous=current;
             }
@@ -67,22 +67,18 @@ void vstaviH1(Vozlisce* zacetek) {
 
         if (current->naslednje!=NULL){ // ne-prvi in ne-zadnji element linked lista
             if (previous->niz[0]=='\0' && current->niz[0]!='\0' && current->naslednje->niz[0]=='\0'){
-                char* new = malloc (1100*sizeof(char));
-                strcpy(new, current->niz);
-                sprintf(current->niz, "<h1>%s</h1>", new);
+                enrichen(&(current->niz));
             }
             previous=current;
         }
         if (current->naslednje==NULL){ // zadnji element linked lista
             if (previous->niz[0]=='\0' && current->niz[0]!='\0'){
-                char* new = malloc (1100*sizeof(char));
-                strcpy(new, current->niz);
-                sprintf(current->niz, "<h1>%s</h1>", new);
+                enrichen(&(current->niz));
             }
             previous=current;
         }
 
-
+        // previous=current;
         current=current->naslednje;
     }
 
