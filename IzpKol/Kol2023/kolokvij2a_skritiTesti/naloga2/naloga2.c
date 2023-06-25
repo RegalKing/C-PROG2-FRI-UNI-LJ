@@ -21,10 +21,10 @@
 
 // po potrebi dopolnite ...
 
-int exists (int* stevilke, int podatek){
+int exists (Vozlisce* current, int* numbers, int counter){
 
-    for (int i=0; stevilke[i]!=INT_MIN; i++){
-        if (stevilke[i]==podatek){
+    for (int i=0; i<counter; i++){
+        if (current->podatek == numbers[i]){
             return 1;
         }
     }
@@ -33,95 +33,73 @@ int exists (int* stevilke, int podatek){
 
 void izlociSkupne(Vozlisce* a, Vozlisce* b, Vozlisce** noviA, Vozlisce** noviB) {
     
-    int* numbersA = malloc (1001 * sizeof(int));
-    int* numbersB = malloc (1001 * sizeof(int));
+
+    int* numbersA=malloc(1000*sizeof(int));
+    int* numbersB=malloc(1000*sizeof(int));
 
     Vozlisce* temp = a;
-    int counterA = 0;
 
+    int counterA=0;
     while (temp!=NULL){
         numbersA[counterA]=temp->podatek;
-        temp=temp->naslednje;
         counterA++;
+        temp=temp->naslednje;
     }
 
     temp = b;
-    int counterB = 0;
-
+    int counterB=0;
     while (temp!=NULL){
         numbersB[counterB]=temp->podatek;
-        temp=temp->naslednje;
         counterB++;
-    }
-
-    numbersA[counterA]=INT_MIN;
-    numbersB[counterB]=INT_MIN;
-
-    temp = a; // zdej bomo A obdelal
-
-    while (temp!=NULL){
-        int stevilka = temp->podatek;   
-        int obstaja = exists(numbersB, stevilka);
-        if (obstaja == 1){
-            temp->podatek=-1;
-        }
         temp=temp->naslednje;
     }
 
-    temp = b; // zdej bomo A obdelal
+    Vozlisce** seznamA = calloc(1001,sizeof(Vozlisce));
+    int stevecA=0;
+    Vozlisce** seznamB = calloc(1001,sizeof(Vozlisce));
+    int stevecB=0;
 
-    while (temp!=NULL){
-        int stevilka = temp->podatek;   
-        int obstaja = exists(numbersA, stevilka);
-        if (obstaja == 1){
-            temp->podatek=-1;
-        }
-        temp=temp->naslednje;
-    }
 
     temp = a;
-    Vozlisce** vozlisca = malloc (1000*sizeof(Vozlisce*));
-
-    int stevec = 0;
     while (temp!=NULL){
-        if (temp->podatek == -1){
+        int obstaja = exists(temp, numbersB, counterB);
+        if (obstaja==1){
+            temp->podatek= -1;
         }
         else{
-            vozlisca[stevec]=temp;
-            stevec++;
+            seznamA[stevecA]=temp;
+            stevecA++;
         }
         temp=temp->naslednje;
-    }
-
-    vozlisca[stevec+1]=NULL;
-
-    for (int i=0; i<stevec; i++){
-        vozlisca[i]->naslednje=vozlisca[i+1];
     }
 
     temp = b;
-    Vozlisce** vozliscaB = malloc (1000*sizeof(Vozlisce*));
-
-    stevec = 0;
     while (temp!=NULL){
-        if (temp->podatek == -1){
+        int obstaja = exists(temp, numbersA, counterA);
+        if (obstaja==1){
+            temp->podatek= -1;
         }
         else{
-            vozliscaB[stevec]=temp;
-            stevec++;
+            seznamB[stevecB]=temp;
+            stevecB++;
         }
         temp=temp->naslednje;
     }
 
-    vozliscaB[stevec+1]=NULL;
+    for (int i=0; i<stevecA; i++){
+        seznamA[i]->naslednje=seznamA[i+1];
+    }
 
-    for (int i=0; i<stevec; i++){
-        vozliscaB[i]->naslednje=vozliscaB[i+1];
+    for (int i=0; i<stevecB; i++){
+        seznamB[i]->naslednje=seznamB[i+1];
     }
 
 
-    *noviA=vozlisca[0];
-    *noviB=vozliscaB[0];
+
+    *noviA=seznamA[0];
+    *noviB=seznamB[0];
+
+
 
 
 
