@@ -20,45 +20,41 @@
 
 // po potrebi dopolnite ...
 
-int exists(Vozlisce** seznam, Vozlisce* node){
+int exists (int* seznam, int podatek, int counter){
 
-    for (int i=0; seznam[i]!=NULL; i++){
-        if (*(node->p)==*(seznam[i]->p)){
+    for (int i=0; i<counter; i++){
+        if (seznam[i]==podatek){
             return 1;
         }
     }
-    return 0; // else
+    return 0;
 }
-
 
 void izlociDuplikate(Vozlisce* zacetek) {
 
-    // int* stevila = malloc (1000*sizeof(int));
-    Vozlisce** seznam = calloc (1001,sizeof(Vozlisce*));
+    Vozlisce** list = calloc(1001, sizeof(Vozlisce*));
+
+    int* seznam = malloc(1000*sizeof(int));
 
     Vozlisce* temp = zacetek;
 
-    int index = -1;
-
+    int counter = 0;
     while (temp!=NULL){
-        int exist = exists(seznam, temp);
-        if (exist == 1){
+        int obstaja = exists(seznam, *(temp->p), counter);
+        if (obstaja==1){
         }
         else{
-            index++;
-            seznam[index]=temp;
+            seznam[counter]=*(temp->p);
+            list[counter]=temp;
+            counter++;
+            
         }
         temp=temp->naslednje;
     }
 
-    for (int i=0; seznam[i]!=NULL; i++){
-        Vozlisce* current = seznam[i];
-
-        current->naslednje=seznam[i+1];
+    for (int i=0; i<counter; i++){
+        list[i]->naslednje=list[i+1];
     }
-
-    zacetek=seznam[0];
-
 
 
 
