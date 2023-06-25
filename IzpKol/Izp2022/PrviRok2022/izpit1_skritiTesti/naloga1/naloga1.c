@@ -38,42 +38,21 @@ test15..test17: samodejno izdelani, splo"sni
 
 int sestEj(char* niz) {
 
-    char* stevilka = calloc(10,sizeof(char));
-    
-    int sum = 0;
+    char* temp = calloc(10,sizeof(char));
 
+    int sum = 0;
     for (int i=0; niz[i]!='\0'; i++){
-        if (niz[i]=='E'){
-            i++;
-            if (isdigit(niz[i]) && niz[i]!='0'){
-                stevilka[0]=niz[i];
-                i++;
-                if (isdigit(niz[i])){
-                    stevilka[1]=niz[i];
-                    i++;
-                    if (isdigit(niz[i])){
-                        stevilka[2]=niz[i];
-                        i++;
-                        if (niz[i]=='_'){
-                            // printf("%d ", atoi(stevilka));
-                            sum+=atoi(stevilka);
-                            
-                        }
-                        else{
-                            i--;
-                        }
-                    }
-                    else{
-                        i--;
-                    }
-                }
-                else{
-                    i--;
-                }
+        if (niz[i]=='E' && (niz[i+1]!='0' && isdigit(niz[i+1])) && isdigit(niz[i+2]) && isdigit(niz[i+3]) && niz[i+4]=='_'){
+            temp[0]=niz[i+1];
+            temp[1]=niz[i+2];
+            temp[2]=niz[i+3];
+            temp[3]='\0';
+            int currentNumber = atoi(temp);
+            if (currentNumber>99){
+                sum+=currentNumber;
             }
-            else{
-                i--;
-            }
+
+            i+=4;
         }
     }
     return sum;
@@ -90,7 +69,8 @@ int sestEj(char* niz) {
 #ifndef test
 
 int main() {
-    // Tole dopolnite, "ce "zelite funkcijo testirati s svojimi lastnimi nizi.
+    char* lol="543_E123_e456_E75_E900/E7.4_E825.3_E0357_E089_E_EE651_abcdE736_E842";
+    int lol2 = sestEj(lol);
     return 0;
 }
 
