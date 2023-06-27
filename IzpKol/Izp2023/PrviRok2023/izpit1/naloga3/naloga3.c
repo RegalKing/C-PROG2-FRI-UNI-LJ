@@ -25,7 +25,7 @@
 
 // po potrebi dopolnite ...
 
-Vozlisce* vstaviStolpec(Vozlisce* start, int mesto, int vsebina) {
+Vozlisce* vstaviStolpec(Vozlisce* start, int mesto, int vsebina){
     
     Vozlisce* temp = start;
 

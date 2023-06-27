@@ -23,13 +23,38 @@ test02..test08: "se nekaj dodatnih testov
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdbool.h>
 #include <string.h>
 
-// Lahko dodate "se kak #include, pomo"zno funkcijo ipd.
+void generate(char *S, char *result, int n, int pos, int* count){
+    if (pos == n) {
+        printf("%s\n", result);
+        return;
+    }
 
-int main() {
-    // dopolnite ...
+    for (int i = 0; i < strlen(S); i++){
+        if (count[i] < 3) {
+            result[pos] = S[i];
+            count[i]++;
+
+            generate(S, result, n, pos + 1, count);
+
+            // Backtracking
+            count[i]--;
+            result[pos] = '\0';
+        }
+    }
+}
+
+int main(){
+    int d, n;
+    char S[51];
+
+    scanf("%d %s %d", &d, S, &n);
+
+    char* result = calloc((n+1), sizeof(char));
+    int* count = calloc(d, sizeof(int));
+
+    generate(S, result, n, 0, count);
 
     return 0;
 }
