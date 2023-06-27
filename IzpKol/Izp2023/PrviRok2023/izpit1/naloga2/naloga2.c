@@ -15,7 +15,7 @@
 #include <stdbool.h>
 #include <string.h>
 
-// po potrebi dopolnite ...
+// po potrebi dopolnite ...   
 
 void print_combinations(int arr[], int n, int a, int b, int index, int sum){
     if(sum==n && index>=a && index<=b){
