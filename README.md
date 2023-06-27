@@ -170,5 +170,5 @@ Control Constructs I - Week 1
 - [ ] 2023 - 2nd Exam - 2nd task 
 - [x] 2023 - 2nd Exam - 3rd task 
 ## Goal
-- [ ] Pass the subject
+- [x] Pass the subject (Grade: 8)
 
