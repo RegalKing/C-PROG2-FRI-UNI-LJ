@@ -164,7 +164,7 @@ Control Constructs I - Week 1
 - -------------------------------
 - [x] 2023 - 1st Exam - 1st task 
 - [x] 2023 - 1st Exam - 2nd task 
-- [ ] 2023 - 1st Exam - 3rd task 
+- [x] 2023 - 1st Exam - 3rd task 
 ## Goal
 - [ ] Pass the subject
 
