@@ -11,7 +11,7 @@ Every task with a working makefile and test units can be tested using the follow
 ```c
 gcc -o FileName FileName.c
 export name=FileName
-make file
+make test
 ``` 
 
 <!-- GETTING STARTED -->
