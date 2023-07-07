@@ -7,7 +7,7 @@ All the code is in C.
 
 This course is known as the hardest course out of the ten courses in the first year at the Faculty, with a passrate of around 35% every year, meaning 65% of students fail the class each Academic year.
 
-Every task with a working makefile can be tested using the following sequence of commands:
+Every task with a working makefile and test units can be tested using the following sequence of commands:
 ```c
 gcc -o FileName FileName.c
 export name=FileName
