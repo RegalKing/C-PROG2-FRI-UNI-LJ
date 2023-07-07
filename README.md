@@ -13,7 +13,7 @@ gcc -o FileName FileName.c
 export name=FileName
 make test
 ```
-You can also run the program by hand using the following sequence of commands:
+You can also run the program manually using the following sequence of commands:
 ```c
 gcc -o FileName FileName.c
 ./FileName
