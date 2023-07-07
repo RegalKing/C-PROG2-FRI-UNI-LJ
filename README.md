@@ -12,7 +12,12 @@ Every task with a working makefile and test units can be tested using the follow
 gcc -o FileName FileName.c
 export name=FileName
 make test
-``` 
+```
+You can also run the program by hand using the following sequence of commands:
+```c
+gcc -o FileName FileName.c
+./FileName
+```
 
 <!-- GETTING STARTED -->
 ## Programming 2 - Progress tracker
